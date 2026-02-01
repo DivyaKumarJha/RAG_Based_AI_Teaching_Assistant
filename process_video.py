@@ -11,3 +11,4 @@ for file in files:
     file_name = file.split("lecture-")[0] + "lecture-" + tutorial_number
     print(file_name)
     subprocess.run(["ffmpeg", "-i", f"videos/{file}", f"audios/{tutorial_number}_{file_name}.mp3"])
+    # this subprocess.run() is evoking the ffmpeg
